@@ -2,10 +2,10 @@
     "name": "fakerjs-2",
     "version": "1.0.0",
     "description": "School Project Full Sail",
-    "source": "index.js",
+    "source": "/src/index.html",
     "scripts": {
-        "start": "",
-        "build": "",
+        "start": "parcel",
+        "build": "parcel build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -15,6 +15,7 @@
     "author": "Hazey",
     "license": "ISC",
     "dependencies": {
-        "@faker-js/faker": "^7.6.0"
+        "@faker-js/faker": "^7.6.0",
+        "parcel": "^2.8.0"
     }
 }
