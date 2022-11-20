@@ -1,4 +1,4 @@
-import { faker } from "@faker-js/faker";
+import {faker}  from "@faker-js/faker";
 
 const avatar = faker.image.avatar();
 const name = faker.name.firstName();
@@ -7,6 +7,7 @@ const userId = faker.datatype.uuid();
 const birthdate = faker.date.birthdate();
 const vehicle = faker.vehicle.vehicle();
 
+//! working part
 const userProfile = {
     avatar,
     name,
@@ -16,4 +17,16 @@ const userProfile = {
     vehicle,
 };
 
+
+
 export default userProfile;
+
+// //! working part
+// const userProfile = {
+//     avatar,
+//     name,
+//     email,
+//     userId,
+//     birthdate,
+//     vehicle,
+// };
