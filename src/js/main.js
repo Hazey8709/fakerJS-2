@@ -7,8 +7,8 @@ const userContainer = document.getElementById("user");
 const userList = document.createElement("section");
 
 //! Working statement
-const buildUser = () => {
-    //const img = document.createElement("img");
+const buildUser = (data) => {
+    const img = document.createElement("img");
     const avatar = document.createElement("a");
 
     const nameTitle = document.createElement("h3");
@@ -38,7 +38,7 @@ const buildUser = () => {
     vehicalTitle.innerText = "Vehicle:";
     vehicle.innerText = userProfile.vehicle;
 
-    // userList.appendChild(img);
+    userList.appendChild(img);
     userList.appendChild(avatar);
 
     //img.appendChild(avatar)
@@ -68,53 +68,6 @@ const buildUser = () => {
 
     buildUser(userProfile);
 })();
-
-// //! for Loop
-// for (let i = 0; i < userProfile.length; i++) {
-//     userProfile += userProfile[i];
-// }
-
-// //!   ?
-// const profile = " ";
-// for (let userData = 0; userData < userData.length; i++) {
-//     profile += userData[i];
-// }
-
-// //!     ??
-// const buildUser1 = (userData) => {
-//     for ( let i = 0; i < 10;  i++) {
-//         const lineItemContent = `${prop} : ${userData[prop]} `;
-//         const lineItem = document.createElement("li");
-
-//         lineItem.innerText = lineItemContent;
-//         UserList.appendChild(lineItem);
-//         UserSection.appendChild(UserList);
-//     }
-// };
-
-// //! Try 2 . (not-working as is)
-// const buildUser = (userData) => {
-//     for ( let i = 0; i < userData.length;  i++) {
-//         const lineItemContent = userData[i];
-//         const lineItem = document.createElement("li");
-
-//         lineItem.innerText = lineItemContent;
-//         UserList.appendChild(lineItem);
-//         UserSection.appendChild(UserList);
-//     }
-// };
-
-// //! Working statement
-// const buildUser = (userData) => {
-//     for (const prop in userData) {
-//         const lineItemContent = `${prop} : ${userData[prop]} `;
-//         const lineItem = document.createElement("li");
-
-//         lineItem.innerText = lineItemContent;
-//         UserList.appendChild(lineItem);
-//         UserSection.appendChild(UserList);
-//     }
-// };
 
 // //!  Whole set-up (works)
 // const UserSection = document.getElementById("user");
