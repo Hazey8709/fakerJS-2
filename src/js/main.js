@@ -1,15 +1,13 @@
 import userProfile from "./data/user";
 
-//const UserSection = document.getElementById("user");
-//const UserList = document.createElement( "ul" );
-
 const userContainer = document.getElementById("user");
 const userList = document.createElement("section");
 
 //! Working statement
-const buildUser = (data) => {
+const buildUser = () => {
     const img = document.createElement("img");
     const avatar = document.createElement("a");
+    //const avatar = document.URL
 
     const nameTitle = document.createElement("h3");
     const name = document.createElement("p");
@@ -26,7 +24,7 @@ const buildUser = (data) => {
     const vehicalTitle = document.createElement("h3");
     const vehicle = document.createElement("p");
 
-    avatar.href = userProfile.avatar;
+    avatar.URL = userProfile.avatar;
     nameTitle.innerText = "Name:";
     name.innerText = userProfile.name;
     emailTitle.innerText = "Email:";
@@ -40,9 +38,6 @@ const buildUser = (data) => {
 
     userList.appendChild(img);
     userList.appendChild(avatar);
-
-    //img.appendChild(avatar)
-    //userList.append(img)
 
     userList.appendChild(nameTitle);
     userList.appendChild(name);
@@ -61,6 +56,7 @@ const buildUser = (data) => {
 
     userContainer.appendChild(userList);
 };
+
 
 (() => {
     console.log("----------- working! ------");

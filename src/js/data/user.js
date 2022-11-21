@@ -7,6 +7,8 @@ const userId = faker.datatype.uuid();
 const birthdate = faker.date.birthdate();
 const vehicle = faker.vehicle.vehicle();
 
+//const users = "";
+
 //! working part
 const userProfile = {
     avatar,
@@ -16,5 +18,9 @@ const userProfile = {
     birthdate,
     vehicle,
 };
+
+// for (let userProfile = 0; userProfile < userProfile.length; userProfile++) {
+//     users += userProfile;
+// }
 
 export default userProfile;
