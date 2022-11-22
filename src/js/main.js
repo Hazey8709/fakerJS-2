@@ -9,20 +9,17 @@ const buildUser = (users) => {
         const userList = document.createElement("section");
 
         const img = document.createElement("img");
-
         const avatar = document.createElement("a");
-
         const nameTitle = document.createElement("h3");
         const name = document.createElement("p");
-
         const emailTitle = document.createElement("h3");
         const email = document.createElement("p");
-
         const userIdTitle = document.createElement("h3");
         const userId = document.createElement("p");
-
         const birthdateTitle = document.createElement("h3");
         const birthdate = document.createElement("p");
+        const vehicleTitle = document.createElement("h3");
+        const vehicle = document.createElement("p");
 
         avatar.URL = users[i].avatar;
 
@@ -38,6 +35,9 @@ const buildUser = (users) => {
         birthdateTitle.innerText = "Birth-Date: ";
         birthdate.innerText = users[i].birthdate;
 
+        vehicleTitle.innerText = "Vehicle: ";
+        vehicle.innerText = users[i].vehicle;
+
         userList.appendChild(img);
         userList.appendChild(avatar);
         userList.appendChild(nameTitle);
@@ -48,6 +48,8 @@ const buildUser = (users) => {
         userList.appendChild(userId);
         userList.appendChild(birthdateTitle);
         userList.appendChild(birthdate);
+        userList.appendChild(vehicleTitle);
+        userList.appendChild(vehicle);
 
         usersContainer.appendChild(userList);
     }
