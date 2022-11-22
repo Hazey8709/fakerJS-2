@@ -1,14 +1,37 @@
-body {
-    background-color: #0005;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*! FOR: Standard html tags      */
+@layer base {
+    body {
+        @apply bg-white;
+    }
+
+    a {
+        @apply border-2 w-24;
+    }
 }
 
-a {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    border: 2px solid red;
-}
+/*! FOR:  Headers, Footers, Cards, Sections        */
+@layer components {
+    header {
+        @apply text-5xl text-center mt-5 text-black underline;
+    }
 
-section {
-    border: 1px solid black;
+    section {
+        @apply border-2 border-black rounded-md text-center mt-10 bg-slate-400  text-xl;
+    }
+
+    section > section {
+        @apply bg-blue-300 mx-10;
+    }
+
+    footer {
+        @apply mt-10 text-gray-500;
+    }
+
+    span {
+        @apply ml-20;
+    }
 }
