@@ -21,7 +21,7 @@ const buildUser = (users) => {
         const vehicleTitle = document.createElement("h3");
         const vehicle = document.createElement("p");
 
-        avatar.URL = users[i].avatar;
+        avatar.href = users[i].avatar;
 
         nameTitle.innerText = "Name: ";
         name.innerText = users[i].name;
