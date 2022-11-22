@@ -1,26 +1,40 @@
 import { faker } from "@faker-js/faker";
 
-const avatar = faker.image.avatar();
-const name = faker.name.firstName();
-const email = faker.internet.email();
-const userId = faker.datatype.uuid();
-const birthdate = faker.date.birthdate();
-const vehicle = faker.vehicle.vehicle();
-
 //const users = "";
 
-//! working part
-const userProfile = {
-    avatar,
-    name,
-    email,
-    userId,
-    birthdate,
-    vehicle,
-};
+// //! working part
+// const userProfile = {
+//     avatar,
+//     name,
+//     email,
+//     userId,
+//     birthdate,
+//     vehicle,
+// };
 
-// for (let userProfile = 0; userProfile < userProfile.length; userProfile++) {
-//     users += userProfile;
-// }
+const users = [];
 
-export default userProfile;
+for (let i = 0; i < 50; i++) {
+    const avatar = faker.image.avatar();
+    const name = faker.name.firstName();
+    const email = faker.internet.email();
+    const userId = faker.datatype.uuid();
+    const birthdate = faker.date.birthdate();
+    const vehicle = faker.vehicle.vehicle();
+
+    const userProfile = {
+        avatar,
+        name,
+        email,
+        userId,
+        birthdate,
+        vehicle,
+    };
+
+    users.push(userProfile);
+}
+
+// const users = userProfile[i];
+
+// console.log(users);
+export default users;
